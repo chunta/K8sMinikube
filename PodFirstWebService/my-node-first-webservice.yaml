@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-node-first-webservice-pod
+  labels:
+    app: my-node-first-webservice-app
+spec:
+  containers:
+    - name: my-node-first-webservice-container
+      image: uck729/t-my-node-webservice
+      ports:
+        - containerPort: 3000
